@@ -1,5 +1,82 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &456536738278574065
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6644681674655483797}
+  - component: {fileID: 6022429481154259093}
+  - component: {fileID: 7997564053502951196}
+  m_Layer: 0
+  m_Name: Ambience
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6644681674655483797
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 456536738278574065}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 4318290237554146966}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6022429481154259093
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 456536738278574065}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: FMODUnity::FMODUnity.StudioEventEmitter
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 1887630142
+      Data2: 1078406135
+      Data3: -1128336473
+      Data4: 583088938
+    Path: event:/Amb/Ambience
+  Event: 
+  EventPlayTrigger: 0
+  EventStopTrigger: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  NonRigidbodyVelocity: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
+--- !u!114 &7997564053502951196
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 456536738278574065}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5e964efe0e8cd4ddba522c37df205aa5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::AudioEmitterPosition
+  tagName: Player
 --- !u!1 &1146472850133498800
 GameObject:
   m_ObjectHideFlags: 0
@@ -288,6 +365,7 @@ Transform:
   - {fileID: 5138542554865848846}
   - {fileID: 4782723540720384308}
   - {fileID: 4170848698623866482}
+  - {fileID: 6644681674655483797}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &4318290237554146967
@@ -309,57 +387,50 @@ MonoBehaviour:
     music02: {fileID: 8933774022352548864}
     musicBoss: {fileID: 3257842776572977270}
     musicPause: {fileID: 4860983653683116548}
-    ambiance: {fileID: 0}
     snapShotPause: {fileID: 7484880938483047845}
+    Ambience: {fileID: 6022429481154259093}
   playerFootsteps:
     Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
+      Data1: 351494518
+      Data2: 1078546175
+      Data3: 1689366155
+      Data4: -1949748784
+    Path: event:/Avatar/AvatarFootstep
   playerJump:
     Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
+      Data1: 777922646
+      Data2: 1186401235
+      Data3: 2113844390
+      Data4: 1770859975
+    Path: event:/Avatar/AvatarJump
   playerLand:
     Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
+      Data1: -186188195
+      Data2: 1260488906
+      Data3: -407770953
+      Data4: -1062878427
+    Path: event:/Avatar/AvatarLand
   playerAttackMelee:
     Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
-  playerAttackRanged:
-    Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
+      Data1: -620924694
+      Data2: 1102067385
+      Data3: -200361840
+      Data4: -599496408
+    Path: event:/Avatar/AvatarMelee
   playerHurt:
     Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
+      Data1: -200901845
+      Data2: 1216907811
+      Data3: -1437570147
+      Data4: -803987623
+    Path: event:/Avatar/AvatarHurt
   wallDestroy:
     Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
+      Data1: 1219956366
+      Data2: 1260960991
+      Data3: 92034205
+      Data4: 1791181621
+    Path: event:/Interactables/WallDestroy
   pickupHealth:
     Guid:
       Data1: 0
@@ -369,25 +440,25 @@ MonoBehaviour:
     Path: 
   doorSwitch:
     Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
+      Data1: -179609021
+      Data2: 1220730804
+      Data3: -1123793785
+      Data4: 305522023
+    Path: event:/Interactables/DoorSwitch
   doorOpen:
     Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
+      Data1: 1718859547
+      Data2: 1308705539
+      Data3: 212018840
+      Data4: 287426492
+    Path: event:/Interactables/DoorOpen
   pickupKey:
     Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
+      Data1: 1934280398
+      Data2: 1076376817
+      Data3: -893386110
+      Data4: -623926517
+    Path: event:/Interactables/KeyPickup
   pressurePad:
     Guid:
       Data1: 0
@@ -397,32 +468,32 @@ MonoBehaviour:
     Path: 
   acidSplash:
     Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
+      Data1: 793518450
+      Data2: 1252513900
+      Data3: 1507740086
+      Data4: -1121105788
+    Path: event:/Amb/AcidSpalsh
   boxPush:
     Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
+      Data1: -674318869
+      Data2: 1277017219
+      Data3: 1267041978
+      Data4: 1652558093
+    Path: event:/Interactables/PushBox
   menuClick:
     Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
+      Data1: 264675766
+      Data2: 1311587100
+      Data3: -1941866055
+      Data4: 813354490
+    Path: event:/Ui/ButtonClick
   menuStartGame:
     Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
+      Data1: -1693649267
+      Data2: 1142475283
+      Data3: 2032776856
+      Data4: -1903863277
+    Path: event:/Ui/StartClick
   enemyFootstep:
     Guid:
       Data1: 0
@@ -432,25 +503,25 @@ MonoBehaviour:
     Path: 
   enemyRanged:
     Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
+      Data1: -294510647
+      Data2: 1260155053
+      Data3: -144779882
+      Data4: -1164010787
+    Path: event:/Enemies/SpitterAttack
   enemyMelee:
     Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
+      Data1: -277614218
+      Data2: 1285335424
+      Data3: -356939904
+      Data4: 887912896
+    Path: event:/Enemies/ChomperAttack
   enemyDeath:
     Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
+      Data1: 1847852314
+      Data2: 1259024821
+      Data3: 1971832208
+      Data4: 708017861
+    Path: event:/Enemies/EnemyDeath
   stingerGameOver:
     Guid:
       Data1: 715162006
