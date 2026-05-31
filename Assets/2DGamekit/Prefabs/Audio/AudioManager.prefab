@@ -417,6 +417,13 @@ MonoBehaviour:
       Data3: -200361840
       Data4: -599496408
     Path: event:/Avatar/AvatarMelee
+  playerAttackRanged:
+    Guid:
+      Data1: 1320730448
+      Data2: 1133689431
+      Data3: -1476165217
+      Data4: 723625444
+    Path: event:/Avatar/AvatarGun
   playerHurt:
     Guid:
       Data1: -200901845
@@ -433,11 +440,11 @@ MonoBehaviour:
     Path: event:/Interactables/WallDestroy
   pickupHealth:
     Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
+      Data1: -1998629139
+      Data2: 1291096990
+      Data3: 1913204659
+      Data4: 348428208
+    Path: event:/Interactables/HealthPickup
   doorSwitch:
     Guid:
       Data1: -179609021
@@ -454,10 +461,10 @@ MonoBehaviour:
     Path: event:/Interactables/DoorOpen
   pickupKey:
     Guid:
-      Data1: 1934280398
-      Data2: 1076376817
-      Data3: -893386110
-      Data4: -623926517
+      Data1: -404560681
+      Data2: 1280387532
+      Data3: 659737485
+      Data4: 1736739660
     Path: event:/Interactables/KeyPickup
   pressurePad:
     Guid:
