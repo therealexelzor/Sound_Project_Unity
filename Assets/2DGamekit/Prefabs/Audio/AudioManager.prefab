@@ -12,8 +12,8 @@ GameObject:
   - component: {fileID: 6022429481154259093}
   - component: {fileID: 7997564053502951196}
   m_Layer: 0
-  m_Name: Ambience
-  m_TagString: Untagged
+  m_Name: Ambiance
+  m_TagString: Ambiance
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -388,7 +388,7 @@ MonoBehaviour:
     musicBoss: {fileID: 3257842776572977270}
     musicPause: {fileID: 4860983653683116548}
     snapShotPause: {fileID: 7484880938483047845}
-    Ambience: {fileID: 6022429481154259093}
+    ambiance: {fileID: 6022429481154259093}
   playerFootsteps:
     Guid:
       Data1: 351494518
