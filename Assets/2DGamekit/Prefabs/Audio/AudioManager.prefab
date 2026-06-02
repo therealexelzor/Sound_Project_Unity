@@ -482,11 +482,11 @@ MonoBehaviour:
     Path: event:/Amb/AcidSpalsh
   boxPush:
     Guid:
-      Data1: -674318869
-      Data2: 1277017219
-      Data3: 1267041978
-      Data4: 1652558093
-    Path: event:/Interactables/PushBox
+      Data1: -811856248
+      Data2: 1140344536
+      Data3: 547084191
+      Data4: 403248624
+    Path: event:/Interactables/BoxDrag
   menuClick:
     Guid:
       Data1: 264675766
